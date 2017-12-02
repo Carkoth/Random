@@ -1,4 +1,6 @@
 import java.lang.Math;
+import java.util.WeakHashMap;
+
 public class HeavyLoadoutGenerator {
 
     //Variables for getting the while loops to end
@@ -3834,7 +3836,7 @@ public class HeavyLoadoutGenerator {
                 //Loadout Loop
                 while (!loadoutTwoLoopSatisfied) {
 
-                    int loadoutRandomizer = (int) (Math.random() * 357 + 1);
+                    int loadoutRandomizer = (int) (Math.random() * 356 + 1);
                     switch (loadoutRandomizer) {
 
                         //Hat Region
@@ -5418,341 +5420,469 @@ public class HeavyLoadoutGenerator {
                         //War Head
                         case 101: {
 
-                            loadoutTwoCosmetic = "War Head";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "War Head";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //U-clanka-a
                         case 102: {
 
-                            loadoutTwoCosmetic = "U-clanka-a";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "U-clanka-a";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Crafty Hair
                         case 103: {
 
-                            loadoutTwoCosmetic = "Crafty Hair";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Crafty Hair";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Heavy Artillery Officer's Cap
                         case 104: {
 
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
                             loadoutTwoCosmetic = "Heavy Artillery Officer's Cap";
                             hatEquipRegion = true;
                             wholeHeadEquipRegion = true;
                             loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //K-9 Mane
                         case 105: {
 
-                            loadoutTwoCosmetic = "K-9 Mane";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "K-9 Mane";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Brock's Locks
                         case 106: {
 
-                            loadoutTwoCosmetic = "Brock's Locks";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Brock's Locks";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Pounding Father
                         case 107: {
 
-                            loadoutTwoCosmetic = "Pounding Father";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Pounding Father";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Wilson Weave
                         case 108: {
 
-                            loadoutTwoCosmetic = "Wilson Weave";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Wilson Weave";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Der Maschinensoldaten-Helm
                         case 109: {
 
-                            loadoutTwoCosmetic = "Der Maschinensoldaten-Helm";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Der Maschinensoldaten-Helm";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Sucker SLug
                         case 110: {
 
-                            loadoutTwoCosmetic = "Sucker Slug";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Sucker Slug";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //War Eagle
                         case 111: {
 
-                            loadoutTwoCosmetic = "War Eagle";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "War Eagle";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Ghastly Gibus
                         case 112: {
 
-                            loadoutTwoCosmetic = "Ghastly Gibus";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Ghastly Gibus";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Bill's Hat
                         case 113: {
 
-                            loadoutTwoCosmetic = "Bill's Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Bill's Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Alien Swarm Parasite
                         case 114: {
 
-                            loadoutTwoCosmetic = "Alien Swarm Parasite";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Alien Swarm Parasite";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Wiki Cap
                         case 115: {
 
-                            loadoutTwoCosmetic = "Wiki Cap";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Wiki Cap";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Ellis' Cap
                         case 116: {
 
-                            loadoutTwoCosmetic = "Ellis' Cap";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Ellis' Cap";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Mann Co. Cap
                         case 117: {
 
-                            loadoutTwoCosmetic = "Mann Co. Cap";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Mann Co. Cap";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Ghastlier Gibus
                         case 118: {
 
-                            loadoutTwoCosmetic = "Ghastlier Gibus";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Ghastlier Gibus";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Spine-Chilling Skull
                         case 119: {
 
-                            loadoutTwoCosmetic = "Spine-Chilling Skull";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Spine-Chilling Skull";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Voodoo Juju
                         case 120: {
 
-                            loadoutTwoCosmetic = "Voodoo Juju";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Voodoo Juju";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Bounty Hat
                         case 121: {
 
-                            loadoutTwoCosmetic = "Bounty Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Bounty Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Treasure Hat
                         case 122: {
 
-                            loadoutTwoCosmetic = "Treasure Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Treasure Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Hat of Undeniable Wealth and Respect
                         case 123: {
 
-                            loadoutTwoCosmetic = "Hat of Undeniable Wealth and Respect";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Hat of Undeniable Wealth and Respect";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //World Travelers Hat
                         case 124: {
 
-                            loadoutTwoCosmetic = "World Travelers Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "World Travelers Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Atheletic Supporter
                         case 125: {
 
-                            loadoutTwoCosmetic = "Atheletic Supporter";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Atheletic Supporter";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Humanitarian's Hachimaki
                         case 126: {
 
-                            loadoutTwoCosmetic = "Humanitariab's Hachimaki";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Humanitarian's Hachimaki";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Benefactor's Kanmuri
                         case 127: {
 
-                            loadoutTwoCosmetic = "Benefactor's Kanmuri";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Benefactor's Kanmuri";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Magnanimous Monarch
                         case 128: {
 
-                            loadoutTwoCosmetic = "Magnanimous Monarch";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Magnanimous Monarch";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Aperture Labs Hard Hat
                         case 129: {
 
-                            loadoutTwoCosmetic = "Aperture Labs Hard Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Aperture Labs Hard Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Frontline Field Recorder
                         case 130: {
 
-                            loadoutTwoCosmetic = "Frontline Field Recorder";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Frontline Field Recorder";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Lo-Fi Longwave
                         case 131: {
 
-                            loadoutTwoCosmetic = "Lo-Fi Longwave";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Lo-Fi Longwave";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Spiral Sallet
                         case 132: {
 
-                            loadoutTwoCosmetic = "Spiral Sallet";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            faceEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Spiral Sallet";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                faceEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
 
@@ -5761,447 +5891,615 @@ public class HeavyLoadoutGenerator {
                         //Proof of Purchase
                         case 133: {
 
-                            loadoutTwoCosmetic = "Proof of Purchase";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Proof of Purchase";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Summer Hat
                         case 134: {
 
-                            loadoutTwoCosmetic = "Summer Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Summer Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Party Hat
                         case 135: {
 
-                            loadoutTwoCosmetic = "Party Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Party Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Manniversary Paper hat
                         case 136: {
 
-                            loadoutTwoCosmetic = "Manniversary Paper Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Manniversary Paper Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Ghastlierest Gibus
                         case 137: {
 
-                            loadoutTwoCosmetic = "Ghastlierest Gibus";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Ghastlierest Gibus";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //B.M.O.C
                         case 138: {
 
-                            loadoutTwoCosmetic = "B.M.O.C";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "B.M.O.C";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Ebenezer
                         case 139: {
 
-                            loadoutTwoCosmetic = "Ebenezer";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Ebenezer";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Full Head Of Steam
                         case 140: {
 
-                            loadoutTwoCosmetic = "Full Head of Steam";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Full Head of Steam";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Holiday Headcase
                         case 141: {
 
-                            loadoutTwoCosmetic = "Holiday Headcase";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            necklaceEquipRegion = true;
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion && !necklaceEquipRegion && !beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Holiday Headcase";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                necklaceEquipRegion = true;
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Warsworn Helmet
                         case 142: {
 
-                            loadoutTwoCosmetic = "Warsworn Helmet";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Warsworn Helmet";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Dueler
                         case 143: {
 
-                            loadoutTwoCosmetic = "Dueler";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Dueler";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Gifting Man From Gifting Land
                         case 144: {
 
-                            loadoutTwoCosmetic = "Gifting Man From Gifting Land";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Gifting Man From Gifting Land";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Philater
                         case 145: {
 
-                            loadoutTwoCosmetic = "Philater";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Philater";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Bolt Action Blitzer
                         case 146: {
 
-                            loadoutTwoCosmetic = "Bolt Action Blitzer";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Bolt Action Blitzer";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Gentle Munitionne of Leisure
                         case 147: {
 
-                            loadoutTwoCosmetic = "Gentle Munitionne of Leisure";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Gentle Munitionne of Leisure";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Robot Chicken Hat
                         case 148: {
 
-                            loadoutTwoCosmetic = "Robot Chicken Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Robot Chicken Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Ghostly Gibus
                         case 149: {
 
-                            loadoutTwoCosmetic = "Ghostly Gibus";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Ghostly Gibus";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Skull Island Topper
                         case 150: {
 
-                            loadoutTwoCosmetic = "Skull Island Topper";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Skull Island Topper";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //That '70s Chapeau
                         case 151: {
 
-                            loadoutTwoCosmetic = "That '70s Chapeau";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "That '70s Chapeau";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Cockfighter
                         case 152: {
 
-                            loadoutTwoCosmetic = "Cockfighter";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Cockfighter";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Mann Co. Online Cap
                         case 153: {
 
-                            loadoutTwoCosmetic = "Mann Co. Online Cap";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Mann Co. Online Cap";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Brutal Bouffant
                         case 154: {
 
-                            loadoutTwoCosmetic = "Brutal Bouffant";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Brutal Bouffant";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Conspiracy Cap
                         case 155: {
 
-                            loadoutTwoCosmetic = "Conspiracy Cap";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Conspiracy Cap";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Public Agressor
                         case 156: {
 
-                            loadoutTwoCosmetic = "Public Agressor";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Public Agressor";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Hardy Laurel
                         case 157: {
 
-                            loadoutTwoCosmetic = "Hardy Laurel";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Hardy Laurel";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Grandmaster
                         case 158: {
 
-                            loadoutTwoCosmetic = "Grandmaster";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Grandmaster";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Towering Pillar of Summer Shades
                         case 159: {
 
-                            loadoutTwoCosmetic = "Towering Pillar of Shades";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Towering Pillar of Shades";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Horace
                         case 160: {
 
-                            loadoutTwoCosmetic = "Horace";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Horace";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //MK 50
                         case 161: {
 
-                            loadoutTwoCosmetic = "MK 50";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "MK 50";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Dadliest Catch
                         case 162: {
 
-                            loadoutTwoCosmetic = "Dadliest Catch";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Dadliest Catch";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Bedouin Bandanna
                         case 163: {
 
-                            loadoutTwoCosmetic = "Bedouin Bandanna";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Bedouin Bandanna";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Prinny Hat
                         case 164: {
 
-                            loadoutTwoCosmetic = "Prinny Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Prinny Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Civilian JACK Hat
                         case 165: {
 
-                            loadoutTwoCosmetic = "Civilian JACK Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Civilian JACK Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Military Grade JACK Hat
                         case 166: {
 
-                            loadoutTwoCosmetic = "Military Grade JACK Hat";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Military Grade JACK Hat";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Head Prize
                         case 167: {
 
-                            loadoutTwoCosmetic = "Head Prize";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Head Prize";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Snowmann
                         case 168: {
 
-                            loadoutTwoCosmetic = "Snowmann";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Snowmann";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Audio File
                         case 169: {
 
-                            loadoutTwoCosmetic = "Audio File";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Audio File";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Aztec Warrior
                         case 170: {
 
-                            loadoutTwoCosmetic = "Aztec Warrior";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Aztec Warrior";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Jungle Wreath
                         case 171: {
 
-                            loadoutTwoCosmetic = "Jungle Wreath";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Jungle Wreath";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Monstrous Memento
                         case 172: {
 
-                            loadoutTwoCosmetic = "Monstrous Memento";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Monstrous Memento";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Saxton
                         case 173: {
 
-                            loadoutTwoCosmetic = "Saxton";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Saxton";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Point and Shoot
                         case 174: {
 
-                            loadoutTwoCosmetic = "Point and Shoot";
-                            hatEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!hatEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Point and Shoot";
+                                hatEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
@@ -6209,41 +6507,57 @@ public class HeavyLoadoutGenerator {
                         //Large Luchadore
                         case 175: {
 
-                            loadoutTwoCosmetic = "Large Luchadore";
-                            headSkinEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
-                            standardUnusualMethod(2);
+                            if (!headSkinEquipRegion) {
+
+                                loadoutTwoCosmetic = "Large Luchadore";
+                                headSkinEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+                                standardUnusualMethod(2);
+
+                            }
                             break;
 
                         }
                         //Polar Pullover
                         case 176: {
 
-                            loadoutTwoCosmetic = "Polar Pullover";
-                            headSkinEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
-                            standardUnusualMethod(2);
+                            if (!headSkinEquipRegion) {
+
+                                loadoutTwoCosmetic = "Polar Pullover";
+                                headSkinEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+                                standardUnusualMethod(2);
+
+                            }
                             break;
 
                         }
                         //Cold War Luchadore
                         case 177: {
 
-                            loadoutTwoCosmetic = "Cold War Luchadore";
-                            headSkinEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!headSkinEquipRegion) {
+
+                                loadoutTwoCosmetic = "Cold War Luchadore";
+                                headSkinEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
-                        //Arkham Cown
+                        //Arkham Cowl
                         case 178: {
 
-                            loadoutTwoCosmetic = "Arkham Cowl";
-                            headSkinEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!headSkinEquipRegion) {
+
+                                loadoutTwoCosmetic = "Arkham Cowl";
+                                headSkinEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
@@ -6251,9 +6565,13 @@ public class HeavyLoadoutGenerator {
                         //Pocket Medic
                         case 179: {
 
-                            loadoutTwoCosmetic = "Pocket Medic";
-                            pocketHeavyEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!pocketHeavyEquipRegion) {
+
+                                loadoutTwoCosmetic = "Pocket Medic";
+                                pocketHeavyEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
@@ -6261,248 +6579,323 @@ public class HeavyLoadoutGenerator {
                         //Big Steel Jaw of Summer Fun
                         case 180: {
 
-                            loadoutTwoCosmetic = "Big Steel Jaw of Summer Fun";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Big Steel Jaw of Summer Fun";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //All-Father
                         case 181: {
 
-                            loadoutTwoCosmetic = "All-Father";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "All-Father";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Mutton Mann
                         case 182: {
 
-                            loadoutTwoCosmetic = "Mutton Mann";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Mutton Mann";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Cuban Bristle Crisis
                         case 183: {
 
-                            loadoutTwoCosmetic = "Cuban Bristle Crisis";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Cuban Bristle Crisis";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Viking Braider
                         case 184: {
 
-                            loadoutTwoCosmetic = "Viking Braider";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
-                            break;
+                            if (!beardEquipRegion) {
 
-                        }
-                        //Dictator
-                        case 185: {
+                                loadoutTwoCosmetic = "Viking Braider";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
 
-                            loadoutTwoCosmetic = "Dictator";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            }
                             break;
 
                         }
                         //Leftover Trap
-                        case 186: {
+                        case 185: {
 
-                            loadoutTwoCosmetic = "Leftover Trap";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Leftover Trap";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Yuri's Revenge
-                        case 187: {
+                        case 186: {
 
-                            loadoutTwoCosmetic = "Yuri's Revenge";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Yuri's Revenge";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Unshaved Bear
-                        case 188: {
+                        case 187: {
 
-                            loadoutTwoCosmetic = "Unshaved Bear";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Unshaved Bear";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //El Duderino
-                        case 189: {
+                        case 188: {
 
-                            loadoutTwoCosmetic = "El Duderino";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "El Duderino";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Dictator
-                        case 190: {
+                        case 189: {
 
-                            loadoutTwoCosmetic = "Dictator";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Dictator";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Bruiser's Bandanna
-                        case 191: {
+                        case 190: {
 
-                            loadoutTwoCosmetic = "Bruiser's Bandanna";
-                            beardEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!beardEquipRegion) {
+
+                                loadoutTwoCosmetic = "Bruiser's Bandanna";
+                                beardEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Glasses Region
                         //Virtual Viewfinder
-                        case 192: {
+                        case 191: {
 
-                            loadoutTwoCosmetic = "Virtual Viewfinder";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
-                            standardUnusualMethod(2);
+                            if (!glassesEquipRegion && !faceEquipRegion && lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Virtual Viewfinder";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+                                standardUnusualMethod(2);
+
+                            }
                             break;
 
                         }
                         //Security Shades
-                        case 193: {
+                        case 192: {
 
-                            loadoutTwoCosmetic = "Security Shades";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Security Shades";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Gabe Glasses
-                        case 194: {
+                        case 193: {
 
-                            loadoutTwoCosmetic = "Gabe Glasses";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Gabe Glasses";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+
+                            }
                             break;
 
                         }
                         //Macho Mann
-                        case 195: {
+                        case 194: {
 
-                            loadoutTwoCosmetic = "Macho Mann";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Macho Mann";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //War Goggles
-                        case 196: {
+                        case 195: {
 
-                            loadoutTwoCosmetic = "War Goggles";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion &&!wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "War Goggles";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Reader's Choice
-                        case 197: {
+                        case 196: {
 
-                            loadoutTwoCosmetic = "Reader's Choice";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Reader's Choice";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Professor Speks
-                        case 198: {
+                        case 197: {
 
-                            loadoutTwoCosmetic = "Professor Speks";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Professor Speks";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Summer Shades
-                        case 199: {
+                        case 198: {
 
-                            loadoutTwoCosmetic = "Summer Shades";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion &&!wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Summer Shades";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Pyrovision Goggles
-                        case 200: {
+                        case 199: {
 
-                            loadoutTwoCosmetic = "Pyrovision Goggles";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!glassesEquipRegion && !wholeHeadEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Pyrovision Goggles";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
+
 
                         }
                         //Marxman
-                        case 201: {
+                        case 200: {
 
-                            loadoutTwoCosmetic = "Marxman";
-                            glassesEquipRegion = true;
-                            faceEquipRegion = true;
-                            lensesEquipRegion = true;
-                            wholeHeadEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!glassesEquipRegion && !faceEquipRegion && !lensesEquipRegion && !wholeHeadEquipRegion) {
+
+                                loadoutTwoCosmetic = "Marxman";
+                                glassesEquipRegion = true;
+                                faceEquipRegion = true;
+                                lensesEquipRegion = true;
+                                wholeHeadEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //TF2VRH
-                        case 202: {
+                        case 201: {
 
                             loadoutTwoCosmetic = "TF2VRH";
                             glassesEquipRegion = true;
@@ -6514,7 +6907,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Graybanns
-                        case 203: {
+                        case 202: {
 
                             loadoutTwoCosmetic = "Graybanns";
                             glassesEquipRegion = true;
@@ -6527,7 +6920,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Tomb Readers
-                        case 204: {
+                        case 203: {
 
                             loadoutTwoCosmetic = "Tomb Readers";
                             glassesEquipRegion = true;
@@ -6540,7 +6933,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Spooktacles
-                        case 205: {
+                        case 204: {
 
                             loadoutTwoCosmetic = "Spooktacles";
                             glassesEquipRegion = true;
@@ -6554,7 +6947,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Arms Region
                         //Purity Fist
-                        case 206: {
+                        case 205: {
 
                             loadoutTwoCosmetic = "Purity Fist";
                             armsEquipRegion = true;
@@ -6564,7 +6957,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Hip (Heavy)
                         //Sandvich Safe
-                        case 207: {
+                        case 206: {
 
                             loadoutTwoCosmetic = "Sandvich Safe";
                             hipHeavyEquipRegion = true;
@@ -6573,7 +6966,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Heavy-Weight Champ
-                        case 208: {
+                        case 207: {
 
                             loadoutTwoCosmetic = "Heavy-Weight Champ";
                             hipHeavyEquipRegion = true;
@@ -6583,7 +6976,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Combat Slacks
-                        case 209: {
+                        case 208: {
 
                             loadoutTwoCosmetic = "Combat Slacks";
                             hipHeavyEquipRegion = true;
@@ -6594,7 +6987,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Towel (Heavy)
                         //Toss-Proof Towel
-                        case 210: {
+                        case 209: {
 
                             loadoutTwoCosmetic = "Toss-Proof Towel";
                             towelHeavyEquipRegion = true;
@@ -6604,7 +6997,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Titanium Towel
-                        case 211: {
+                        case 210: {
 
                             loadoutTwoCosmetic = "Titanium Towel";
                             towelHeavyEquipRegion = true;
@@ -6614,7 +7007,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Heavy Harness
-                        case 212: {
+                        case 211: {
 
                             loadoutTwoCosmetic = "Heavy Harness";
                             towelHeavyEquipRegion = true;
@@ -6624,7 +7017,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Shirt Equip Region
                         //Apparatchiks Apparel
-                        case 213: {
+                        case 212: {
 
                             loadoutTwoCosmetic = "Apparatchiks Apparel";
                             shirtEquipRegion = true;
@@ -6634,7 +7027,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Triad Trinket
-                        case 214: {
+                        case 213: {
 
                             loadoutTwoCosmetic = "Triad Trinket";
                             shirtEquipRegion = true;
@@ -6643,7 +7036,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Siberian Sophisticate
-                        case 215: {
+                        case 214: {
 
                             loadoutTwoCosmetic = "Siberian Sophisticate";
                             shirtEquipRegion = true;
@@ -6653,7 +7046,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Hunger Force
-                        case 216: {
+                        case 215: {
 
                             loadoutTwoCosmetic = "Hunger Force";
                             shirtEquipRegion = true;
@@ -6663,7 +7056,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Tyurtlenek
-                        case 217: {
+                        case 216: {
 
                             loadoutTwoCosmetic = "Tyurtlenek";
                             shirtEquipRegion = true;
@@ -6672,7 +7065,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Bolshevik Biker
-                        case 218: {
+                        case 217: {
 
                             loadoutTwoCosmetic = "Bolshevik Biker";
                             shirtEquipRegion = true;
@@ -6681,7 +7074,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Weight Room Warmer
-                        case 219: {
+                        case 218: {
 
                             loadoutTwoCosmetic = "Weight Room Warmer";
                             shirtEquipRegion = true;
@@ -6691,7 +7084,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Heavy Lifter
-                        case 220: {
+                        case 219: {
 
                             loadoutTwoCosmetic = "Heavy Lifter";
                             shirtEquipRegion = true;
@@ -6700,7 +7093,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Warmth Preserver
-                        case 221: {
+                        case 220: {
 
                             loadoutTwoCosmetic = "Warmth Preserver";
                             shirtEquipRegion = true;
@@ -6709,7 +7102,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Hunter Heavy
-                        case 222: {
+                        case 221: {
 
                             loadoutTwoCosmetic = "Hunter Heavy";
                             shirtEquipRegion = true;
@@ -6719,7 +7112,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Sleeveless in Siberia
-                        case 223: {
+                        case 222: {
 
                             loadoutTwoCosmetic = "Sleeveless in Siberia";
                             shirtEquipRegion = true;
@@ -6729,7 +7122,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Snow Sleeves
-                        case 224: {
+                        case 223: {
 
                             loadoutTwoCosmetic = "Snow Sleeves";
                             shirtEquipRegion = true;
@@ -6739,7 +7132,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Commisar's Coat
-                        case 225: {
+                        case 224: {
 
                             loadoutTwoCosmetic = "Commisar's Coat";
                             shirtEquipRegion = true;
@@ -6748,7 +7141,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Siberian Sweater
-                        case 226: {
+                        case 225: {
 
                             loadoutTwoCosmetic = "Siberian Sweater";
                             shirtEquipRegion = true;
@@ -6758,7 +7151,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Heavy Tourism
-                        case 227: {
+                        case 226: {
 
                             loadoutTwoCosmetic = "Heavy Tourism";
                             shirtEquipRegion = true;
@@ -6768,7 +7161,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Airborne Attire
-                        case 228: {
+                        case 227: {
 
                             loadoutTwoCosmetic = "Airborne Attire";
                             shirtEquipRegion = true;
@@ -6778,7 +7171,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Siberian Tigerstripe
-                        case 229: {
+                        case 228: {
 
                             loadoutTwoCosmetic = "Siberian Tigerstripe";
                             shirtEquipRegion = true;
@@ -6788,7 +7181,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Tuxxy
-                        case 230: {
+                        case 229: {
 
                             loadoutTwoCosmetic = "Tuxxy";
                             shirtEquipRegion = true;
@@ -6797,7 +7190,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Dead of Night
-                        case 231: {
+                        case 230: {
 
                             loadoutTwoCosmetic = "Dead of Night";
                             shirtEquipRegion = true;
@@ -6808,7 +7201,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Arm Tattoos Region
                         //Champ Stamp
-                        case 232: {
+                        case 231: {
 
                             loadoutTwoCosmetic = "Champ Stamp";
                             armTattooEquipRegion = true;
@@ -6819,7 +7212,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Sleeves Region
                         //Spooky Sleeves
-                        case 233: {
+                        case 232: {
 
                             loadoutTwoCosmetic = "Spooky Sleeves";
                             sleevesEquipRegion = true;
@@ -6829,7 +7222,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Batter's Bracers
-                        case 234: {
+                        case 233: {
 
                             loadoutTwoCosmetic = "Batter's Bracers";
                             sleevesEquipRegion = true;
@@ -6840,7 +7233,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Feet Region
                         //Aqua Flops
-                        case 235: {
+                        case 234: {
 
                             loadoutTwoCosmetic = "Aqua Flops";
                             feetEquipRegon = true;
@@ -6850,7 +7243,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Rat Stompers
-                        case 236: {
+                        case 235: {
 
                             loadoutTwoCosmetic = "Rat Stompers";
                             feetEquipRegon = true;
@@ -6859,7 +7252,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Flashdance Footies
-                        case 237: {
+                        case 236: {
 
                             loadoutTwoCosmetic = "Flashdance Footies";
                             feetEquipRegon = true;
@@ -6870,7 +7263,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Hair (Heavy) Region
                         //Carl
-                        case 238: {
+                        case 237: {
 
                             loadoutTwoCosmetic = "Carl";
                             hairHeavyEquipRegion = true;
@@ -6880,7 +7273,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Heavy's Hockey Hair
-                        case 239: {
+                        case 238: {
 
                             loadoutTwoCosmetic = "Heavy's Hockey Hair";
                             hairHeavyEquipRegion = true;
@@ -7784,7 +8177,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Blapature Co. Contributor
-                        case 338: {
+                        case 337: {
 
                             loadoutTwoCosmetic = "Blapature Co. Contributor";
                             medalEquipRegion = true;
@@ -7793,7 +8186,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //TF2Maps Charitable HEart
-                        case 339: {
+                        case 338: {
 
                             loadoutTwoCosmetic = "TF2Maps Charitable Heart";
                             medalEquipRegion = true;
@@ -7803,7 +8196,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Earbud's Special Region
                         //Earbuds
-                        case 340: {
+                        case 339: {
 
                             loadoutTwoCosmetic = "Earbuds";
                             earbudsSpecialEquipRegion = true;
@@ -7812,7 +8205,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Lenses Region
-                        case 341: {
+                        case 340: {
 
                             loadoutTwoCosmetic = "Deus Specs";
                             medalEquipRegion = true;
@@ -7822,7 +8215,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Eye-Catcher
-                        case 342: {
+                        case 341: {
 
                             loadoutTwoCosmetic = "Eye-Catcher";
                             lensesEquipRegion = true;
@@ -7832,7 +8225,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Flair Region
-                        case 343: {
+                        case 342: {
 
                             loadoutTwoCosmetic = "Flair!";
                             flairEquipRegion = true;
@@ -7843,7 +8236,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Necklace Region
                         //Merc's Pride Scarf
-                        case 344: {
+                        case 343: {
 
                             loadoutTwoCosmetic = "Merc's Pride Scarf";
                             necklaceEquipRegion = true;
@@ -7852,7 +8245,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Merc's Muffler
-                        case 345: {
+                        case 344: {
 
                             loadoutTwoCosmetic = "Merc's Muffler";
                             necklaceEquipRegion = true;
@@ -7862,7 +8255,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Slithering Scarf
-                        case 346: {
+                        case 345: {
 
                             loadoutTwoCosmetic = "Slithering Scarf";
                             necklaceEquipRegion = true;
@@ -7873,7 +8266,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Disconnected Floating Item Region
                         //Baloonicorn
-                        case 347: {
+                        case 346: {
 
                             loadoutTwoCosmetic = "Baloonicorn";
                             disconnectedFloatingItemEquipRegion = true;
@@ -7883,7 +8276,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //RoBro 3000
-                        case 348: {
+                        case 347: {
 
                             loadoutTwoCosmetic = "RoBro 3000";
                             disconnectedFloatingItemEquipRegion = true;
@@ -7893,7 +8286,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Reindoonicorn
-                        case 349: {
+                        case 348: {
 
                             loadoutTwoCosmetic = "Reindoonicorn";
                             disconnectedFloatingItemEquipRegion = true;
@@ -7902,7 +8295,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Space Hamster Hammy
-                        case 350: {
+                        case 349: {
 
                             loadoutTwoCosmetic = "Space Hamster Hammy";
                             disconnectedFloatingItemEquipRegion = true;
@@ -7913,7 +8306,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Belt Region
                         //Buttler
-                        case 351: {
+                        case 350: {
 
                             loadoutTwoCosmetic = "Buttler";
                             beltEquipRegion = true;
@@ -7922,7 +8315,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Rump-o'-Lantern
-                        case 352: {
+                        case 351: {
 
                             loadoutTwoCosmetic = "Rump-o'-Lantern";
                             beltEquipRegion = true;
@@ -7932,7 +8325,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Catastrophic Companions
-                        case 353: {
+                        case 352: {
 
                             loadoutTwoCosmetic = "Catastrophic Companions";
                             beltEquipRegion = true;
@@ -7942,7 +8335,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Pocket Saxton
-                        case 354: {
+                        case 353: {
 
                             loadoutTwoCosmetic = "Pocket Saxton";
                             beltEquipRegion = true;
@@ -7953,7 +8346,7 @@ public class HeavyLoadoutGenerator {
                         }
                         //Grenades Region
                         //Pocket Raiders
-                        case 355: {
+                        case 354: {
 
                             loadoutTwoCosmetic = "Pocket Raiders";
                             grenadesEquipRegion = true;
@@ -7964,7 +8357,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //Pocket Villains
-                        case 356: {
+                        case 355: {
 
                             loadoutTwoCosmetic = "Pocket Villains";
                             grenadesEquipRegion = true;
@@ -7973,7 +8366,7 @@ public class HeavyLoadoutGenerator {
 
                         }
                         //None
-                        case 367: {
+                        case 356: {
 
                             loadoutTwoCosmetic = "None";
                             loadoutTwoLoopSatisfied = true;
