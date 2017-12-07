@@ -7955,364 +7955,525 @@ public class HeavyLoadoutGenerator {
                         //License to Maim
                         case 282: {
 
-                            loadoutTwoCosmetic = "License to Maim";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "License to Maim";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Resurrection Associate Pin
-                        case 283: {/**/
+                        case 283: {
 
-                            loadoutTwoCosmetic = "Resurrection Associate Pin";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Resurrection Associate Pin";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //SpaceChem Pin
                         case 284: {
 
-                            loadoutTwoCosmetic = "SpaceChem Pin";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "SpaceChem Pin";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Dr. Grordbort's Crest
                         case 285: {
 
-                            loadoutTwoCosmetic = "Dr. Grordbort's Crest";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Dr. Grordbort's Crest";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Clan Pride
                         case 286: {
 
-                            loadoutTwoCosmetic = "Clan Pride";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Clan Pride";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Photo Badge
                         case 287: {
 
-                            loadoutTwoCosmetic = "Photo Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Photo Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Bombinomicon
                         case 288: {
 
-                            loadoutTwoCosmetic = "Bombinomicon";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Bombinomicon";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Mark of the Saint
                         case 289: {
 
-                            loadoutTwoCosmetic = "Mark of the Saint";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Mark of the Saint";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Dr. Grordbort's Copper Crest
                         case 290: {
 
-                            loadoutTwoCosmetic = "Dr. Grordbort's Copper Crest";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Dr. Grordbort's Copper Crest";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Dr. Grordbort's Silver Crest
                         case 291: {
 
-                            loadoutTwoCosmetic = "Dr. Grordbort's Silver Crest";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Dr. Grordbort's Silver Crest";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Spirit of Giving
                         case 292: {
 
-                            loadoutTwoCosmetic = "Spirit of Giving";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Spirit of Giving";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Map Maker's Medallion
                         case 293: {
 
-                            loadoutTwoCosmetic = "Map Maker's Medallion";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Map Maker's Medallion";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Merc Medal
                         case 294: {
 
-                            loadoutTwoCosmetic = "Merc Medal";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Merc Medal";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Atomic Accolade
                         case 295: {
 
-                            loadoutTwoCosmetic = "Atomic Accolade";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Atomic Accolade";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Awesomenauts Badge
                         case 296: {
 
-                            loadoutTwoCosmetic = "Awesomenauts Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Awesomenauts Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Operation Oil Spill Badge
                         case 298: {
 
-                            loadoutTwoCosmetic = "Operation Oil Spill Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Operation Oil Spill Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Operation Steel Trap Badge
                         case 299: {
 
-                            loadoutTwoCosmetic = "Operation Steel Trap Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Operation Steel Trap Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Operation Gear Grinder Badge
                         case 300: {
 
-                            loadoutTwoCosmetic = "Operation Gear Grinder Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Operation Gear Grinder Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Vigilant Pin
                         case 301: {
 
-                            loadoutTwoCosmetic = "Vigilant Pin";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Vigilant Pin";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Friends Forever Companion Square Badge
                         case 302: {
 
-                            loadoutTwoCosmetic = "Friends  Forever Companion Square Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Friends  Forever Companion Square Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Heroic Companion Badge
                         case 303: {
 
-                            loadoutTwoCosmetic = "Heroic Companion Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Heroic Companion Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Triple A Badge
                         case 304: {
 
-                            loadoutTwoCosmetic = "Triple A Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Triple A Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Whale Bone Charm
                         case 305: {
 
-                            loadoutTwoCosmetic = "Whale Bone Charm";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Whale Bone Charm";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Hitt Mann Badge
                         case 306: {
 
-                            loadoutTwoCosmetic = "Hitt Mann Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Hitt Mann Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Faerie Solitare Pin
                         case 307: {
 
-                            loadoutTwoCosmetic = "Faerie Solitare Pin";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Faerie Solitare Pin";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Saxxy Clapper Badge
                         case 308: {
 
-                            loadoutTwoCosmetic = "Saxxy Clapper Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Saxxy Clapper Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Operation Mecha Engine
                         case 309: {
 
-                            loadoutTwoCosmetic = "Operation Mecha Engine";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Operation Mecha Engine";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Smissmas WWreath
                         case 310: {
 
-                            loadoutTwoCosmetic = "Smissmas Wreath";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Smissmas Wreath";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Crot's Crest
                         case 311: {
 
-                            loadoutTwoCosmetic = "Croft's Crest";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Croft's Crest";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Electric Badge-aloo
                         case 312: {
 
-                            loadoutTwoCosmetic = "Electric Badge-aloo";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Electric Badge-aloo";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Operation Two Cities Badge
                         case 313: {
 
-                            loadoutTwoCosmetic = "Operation Two Cities Badge";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Operation Two Cities Badge";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Heart of Gold
                         case 314: {
 
-                            loadoutTwoCosmetic = "Heart of Gold";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Heart of Gold";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Baronial Badge
                         case 315: {
 
-                            loadoutTwoCosmetic = "Baronial Badge";
-                            medalEquipRegion = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Baronial Badge";
+                                medalEquipRegion = true;
+                                loadoutOneLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Thought That Counts
                         case 316: {
 
-                            loadoutTwoCosmetic = "Thought That Counts";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Thought That Counts";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //End of the Line Community Medal
                         case 317: {
 
-                            loadoutTwoCosmetic = "End of the Line Community Medal";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "End of the Line Community Medal";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Invasion Community Medal
                         case 318: {
 
-                            loadoutTwoCosmetic = "Invasion Community Medal";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Invasion Community Medal";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Honeydew's Charitable Countenance
                         case 319: {
 
-                            loadoutTwoCosmetic = "Honeydews Charitable COuntenance";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Honeydews Charitable COuntenance";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Xephos' Philantrophic Physiognomy
                         case 320: {
 
-                            loadoutTwoCosmetic = "Xephos' Philantrophic Physiognomy";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Xephos' Philantrophic Physiognomy";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Gift of Giving
                         case 321: {
 
-                            loadoutTwoCosmetic = "Gift of Giving";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Gift of Giving";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Special Snowflake
                         case 322: {
 
-                            loadoutTwoCosmetic = "Special Snowflake";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Special Snowflake";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
 
@@ -8320,146 +8481,210 @@ public class HeavyLoadoutGenerator {
                         //PASS Time Early Participation Medal
                         case 323: {
 
-                            loadoutTwoCosmetic = "PASS Time Early Participation Medal";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "PASS Time Early Participation Medal";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Altruist's Adornment
                         case 324: {
 
-                            loadoutTwoCosmetic = "Altruist's Adornment";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Altruist's Adornment";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //TF2Maps 72hr TF2Jam Participent
                         case 325: {
 
-                            loadoutTwoCosmetic = "TF2Maps 72hr TF2 Jam Participent";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "TF2Maps 72hr TF2 Jam Participent";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //PASS Time Miniature Half Jack
                         case 326: {
 
-                            loadoutTwoCosmetic = "PASS Time Miniature Half Jack";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "PASS Time Miniature Half Jack";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Jaunty Camper
                         case 327: {
 
-                            loadoutTwoCosmetic = "Jaunty Camper";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Jaunty Camper";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Jaunty Benefactor
                         case 328: {
 
-                            loadoutTwoCosmetic = "Jaunty Benefactor";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Jaunty Benefactor";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Jaunty Trailblazer
                         case 329: {
 
-                            loadoutTwoCosmetic = "Jaunty Trailblazer";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Jaunty Trailblazer";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Duncan's Kindhearted Kisser
                         case 330: {
 
-                            loadoutTwoCosmetic = "Duncan's Kindhearted Kisser";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Duncan's Kindhearted Kisser";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Hannah's Altruistic Aspect
                         case 331: {
 
-                            loadoutTwoCosmetic = "Hannah's Altruistic Aspect";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Hannah's Altruistic Aspect";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Sips' Selfless Simulacrum
                         case 332: {
 
-                            loadoutTwoCosmetic = "Sips' Selfless Simulacrum";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Sips' Selfless Simulacrum";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Sjin's Generous Guise
                         case 333: {
 
-                            loadoutTwoCosmetic = "Sjin's Generous Guise";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Sjin's Generous Guise";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Gift of Giving 2016
                         case 334: {
 
-                            loadoutTwoCosmetic = "Gift of Giving 2016";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Gift of Giving 2016";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Special Snowflake 2016
                         case 335: {
 
-                            loadoutTwoCosmetic = "Special Snowflake 2016";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Special Snowflake 2016";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Mapper vs. Machiners Participant Medal 2017
                         case 336: {
 
-                            loadoutTwoCosmetic = "Mapper vs. Machiners Participant Medal 2017";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Mapper vs. Machiners Participant Medal 2017";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Blapature Co. Contributor
                         case 337: {
 
-                            loadoutTwoCosmetic = "Blapature Co. Contributor";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "Blapature Co. Contributor";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //TF2Maps Charitable HEart
                         case 338: {
 
-                            loadoutTwoCosmetic = "TF2Maps Charitable Heart";
-                            medalEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!medalEquipRegion) {
+
+                                loadoutTwoCosmetic = "TF2Maps Charitable Heart";
+                                medalEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
@@ -8467,38 +8692,54 @@ public class HeavyLoadoutGenerator {
                         //Earbuds
                         case 339: {
 
-                            loadoutTwoCosmetic = "Earbuds";
-                            earbudsSpecialEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!earbudsSpecialEquipRegion) {
+
+                                loadoutTwoCosmetic = "Earbuds";
+                                earbudsSpecialEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Lenses Region
                         case 340: {
 
-                            loadoutTwoCosmetic = "Deus Specs";
-                            medalEquipRegion = true;
-                            glassesEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!lensesEquipRegion && !glassesEquipRegion) {
+
+                                loadoutTwoCosmetic = "Deus Specs";
+                                lensesEquipRegion = true;
+                                glassesEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Eye-Catcher
                         case 341: {
 
-                            loadoutTwoCosmetic = "Eye-Catcher";
-                            lensesEquipRegion = true;
-                            glassesEquipRegion = true;
-                            paintMethod(2);
+                            if (!lensesEquipRegion && !glassesEquipRegion) {
+
+                                loadoutTwoCosmetic = "Eye-Catcher";
+                                lensesEquipRegion = true;
+                                glassesEquipRegion = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Flair Region
                         case 342: {
 
-                            loadoutTwoCosmetic = "Flair!";
-                            flairEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!flairEquipRegion) {
+
+                                loadoutTwoCosmetic = "Flair!";
+                                flairEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
 
@@ -8507,25 +8748,38 @@ public class HeavyLoadoutGenerator {
                         //Merc's Pride Scarf
                         case 343: {
 
-                            loadoutTwoCosmetic = "Merc's Pride Scarf";
-                            necklaceEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
+                            if (!necklaceEquipRegion) {
+
+                                loadoutTwoCosmetic = "Merc's Pride Scarf";
+                                necklaceEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+
+                            }
                             break;
 
                         }
                         //Merc's Muffler
                         case 344: {
 
-                            loadoutTwoCosmetic = "Merc's Muffler";
-                            necklaceEquipRegion = true;
-                            loadoutTwoLoopSatisfied = true;
-                            paintMethod(2);
+                            if (!necklaceEquipRegion) {
+
+                                loadoutTwoCosmetic = "Merc's Muffler";
+                                necklaceEquipRegion = true;
+                                loadoutTwoLoopSatisfied = true;
+                                paintMethod(2);
+
+                            }
                             break;
 
                         }
                         //Slithering Scarf
                         case 345: {
 
+                            if (!necklaceEquipRegion) {
+
+
+
+                            }
                             loadoutTwoCosmetic = "Slithering Scarf";
                             necklaceEquipRegion = true;
                             loadoutTwoLoopSatisfied = true;
