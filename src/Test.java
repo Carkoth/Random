@@ -17,6 +17,7 @@ public class Test {
 
 
      */
+    /*
     //Variables for getting the while loops to end
     private boolean loadoutOneLoopSatisfied = false;
     private boolean loadoutTwoLoopSatisfied = false;
@@ -784,10 +785,14 @@ public class Test {
         }
 
     }
+
     public static void main (String[] args) {
 
         new Test();
+        int yesNo = (int) (Math.random() * 2 + 1);
+        System.out.println(yesNo);
 
     }
+    */
 
 }
