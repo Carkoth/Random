@@ -51,6 +51,9 @@ public class HeavyLoadoutGenerator {
     private String loadoutThreeUnusualEffect = "None";
     private String weapon = "Something went wrong";
     private String killstreak = "Something went wrong";
+    private String warpaintUnusual = "no unusual";
+    private String warpaintWear = "Something went wrong";
+    private String warpaintFestive = "Something went wrong";
     //Class constructor
     private HeavyLoadoutGenerator() {
 
@@ -58,6 +61,7 @@ public class HeavyLoadoutGenerator {
         this.loadoutMethod(1);
         this.loadoutMethod(2);
         this.loadoutMethod(3);
+        this.weaponMethod();
         //Item logging
         System.out.println("Loadout one cosmetic: " + loadoutOneCosmetic);
         System.out.println("    - Paint color: " + loadoutOnePaintColor);
@@ -68,6 +72,7 @@ public class HeavyLoadoutGenerator {
         System.out.println("Loadout three cosmetic: " + loadoutThreeCosmetic);
         System.out.println("    - Paint color: " + loadoutThreePaintColor);
         System.out.println("    - Unusual effect: " + loadoutThreeUnusualEffect);
+        System.out.println("Weapon: " + weapon);
 
     }
     //Main loadout method
@@ -18252,7 +18257,7 @@ public class HeavyLoadoutGenerator {
     private void killstreakMethod() {
 
         int killstreakYesNo = (int) (Math.random() * 2 + 1);
-        if (killstreakYesNo == 1) {
+        if (killstreakYesNo == 2) {
 
             int killstreakVersion = (int) (Math.random() * 2 + 1);
             switch (killstreakVersion) {
@@ -18548,6 +18553,3647 @@ public class HeavyLoadoutGenerator {
             default: {
 
                 System.out.println("Something went wrong with choosing the botkiller version");
+
+            }
+
+        }
+
+    }
+    private void warpaintUnusualMethod() {
+
+        int unusualYesNo = (int) (Math.random() * 2 + 1);
+        if (unusualYesNo == 2) {
+
+            int unusualChooser = (int) (Math.random() * 4 + 1);
+            switch (unusualChooser) {
+
+                //Hot
+                case 1: {
+
+                    warpaintUnusual = "Hot";
+                    break;
+
+                }
+                //Cold
+                case 2: {
+
+                    warpaintUnusual = "Cold";
+                    break;
+
+                }
+                //Energy Orb
+                case 3: {
+
+                    warpaintUnusual = "Energy Orb";
+                    break;
+
+                }
+                //Isotope
+                case 4: {
+
+                    warpaintUnusual = "Isotope";
+                    break;
+
+                }
+                default: {
+
+                    System.out.println("Something went wrong with choosing the weapon unusual");
+                    break;
+
+                }
+
+            }
+
+        }
+
+    }
+    private void warpaintWearMethod() {
+
+        int weaponWearChooser = (int) (Math.random() * 5 + 1);
+        switch (weaponWearChooser) {
+
+            //Factory New
+            case 1: {
+
+                warpaintWear = "Factory New";
+                break;
+
+            }
+            //Minimal Wear
+            case 2: {
+
+                warpaintWear = "Minimal Wear";
+                break;
+
+            }
+            //Field-Tested
+            case 3: {
+
+                warpaintWear = "Field-Tested";
+                break;
+
+            }
+            //Well-Worn
+            case 4: {
+
+                warpaintWear = "Well-Worn";
+                break;
+
+            }
+            //Battle Scarred
+            case 5: {
+
+                warpaintWear = "Battle Scarred";
+                break;
+
+            }
+            default: {
+
+                System.out.println("Something went wrong with choosing the weapon wear");
+
+            }
+
+        }
+
+    }
+    private void warpaintFestiveMethod() {
+
+        int warpaintFestiveYesNo = (int) (Math.random() * 2 + 1);
+        if (warpaintFestiveYesNo == 2) {
+
+            warpaintFestive = "Festive ";
+
+        }
+        else if (warpaintFestiveYesNo == 1) {
+
+            warpaintFestive = "";
+
+        }
+
+    }
+    private void warpaintMethod(String weaponType) {
+
+        switch (weaponType) {
+
+            case "minigun": {
+
+                int warpaintChooser = (int) (Math.random() * 58 + 1);
+                switch (warpaintChooser) {
+
+                    //War Room
+                    case 1: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "War Room Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Citizen Pain
+                    case 2: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Citizen Pain Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood
+                    case 3: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Iron Wood Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Antique Annihalator
+                    case 4: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Antique Annihalator - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //King of the Jungle
+                    case 5: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "King of the Jungle Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Brick House
+                    case 6: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Brick House Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pumpkin Patch
+                    case 7: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Pumpkin Patch Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web
+                    case 8: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Macabre Web - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker
+                    case 9: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Nutcracker Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Top Shelf
+                    case 10: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Top Shelf Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Coffin Nail
+                    case 11: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Coffin Nail Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dressed to Kill
+                    case 12: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Dressed to Kill Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mister Cuddles
+                    case 13: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Mister Cuddles Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Brain Candy
+                    case 14: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Brain Candy Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Butcher Bird
+                    case 15: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Butcher Bird Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Anodized Aloha
+                    case 16: {
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Anodized Aloha Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bamboo Brushed
+                    case 17: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bamboo Brushed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Croc Dusted
+                    case 18: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Croc Dusted Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Leopard Printed
+                    case 19: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Leopard Printed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macaw Masked
+                    case 20: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Macaw Masked Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mannana Peeled
+                    case 21: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Mannana Peeled Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Park Pigmented
+                    case 22: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Park Pigmented Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pina Polished
+                    case 23: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pina Polished Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Sax Waxed
+                    case 24: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Sax Waxed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Tiger Buffed
+                    case 25: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Tiger Buffed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Yeti Coated
+                    case 26: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Yeti Coated Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bank Rolled
+                    case 27: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bank Rolled Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bloom Buffed
+                    case 28: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bloom Buffed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bonk Varnished
+                    case 29: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bonk Varnished Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Cardboard Boxed
+                    case 30: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Cardboard Boxed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Clover Camo'd
+                    case 31: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Clover Camo'd Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dream Piped
+                    case 32: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Dream Piped Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Fire Glazed
+                    case 33: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Fire Glazed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Freeedom Wrapped
+                    case 34: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Freedom Wrapped Warpaint - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Kill Covered
+                    case 35: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Kill Covered Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+
+                    }
+                    //Merc Stained
+                    case 36: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Merc Stained - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pizza Polished
+                    case 37: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pizza Polished Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Quack Canvassed
+                    case 38: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Quack Canvassed - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Star Crossed
+                    case 39: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Star Crossed Minigun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Carpet Bomber Mk. 2
+                    case 40: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodland Warrior Mk. 2
+                    case 41: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodland Warrior Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Wrapped Reviver Mk. 2
+                    case 42: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Wrapped Reviver Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Forest Fire Mk. 2
+                    case 43: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Forest Fire Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Night Owl Mk. 2
+                    case 44: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Night Owl Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodsy Widowmaker Mk. 2
+                    case 45: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodsy Widowmaker Mk. 2 - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn Mk. 2
+                    case 46: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Autumn Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Plaid Potshotter Mk. 2
+                    case 47: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Plaid Potshotter Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civic Duty Mk. 2
+                    case 48: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Civic Duty Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civil Servant Mk. 2
+                    case 49: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dead Reckoner Mk. 2
+                    case 50: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Dead Reckoner Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bovine Blazemaker Mk. 2
+                    case 51: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Bovine Blazemaker Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick Mk. 2
+                    case 52: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Backwoods Boomstick Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Masked Mender Mk.
+                    case 53: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Masked Mender Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web Mk. 2
+                    case 54: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Macabre Web Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood Mk. 2
+                    case 55: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Iron Wood Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker Mk. 2
+                    case 56: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Nutcracker Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Smalltown Bringdown Mk. 2
+                    case 57: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Smalltown Bringdown Mk. 2 Minigun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dragon Slayer
+                    case 58: {
+
+                        killstreakMethod();
+                        weapon = "Dragon Slayer Minigun - Factory New - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the warpaint");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            case "brass beast": {
+
+                int warpaintChooser = (int) (Math.random() * 42 + 1);
+                switch (warpaintChooser) {
+
+                    //Anodized Aloha
+                    case 1: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Anodized Aloha Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bamboo Brushed
+                    case 2: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bamboo Brushed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Croc Dusted
+                    case 3: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Croc Dusted Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Leopard Printed
+                    case 4: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Leopard Printed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macaw Masked
+                    case 5: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Macaw Masked Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mannana Peeled
+                    case 6: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Mannana Peeled Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Park Pigmented
+                    case 7: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Park Pigmented Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pina Polished
+                    case 8: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pina Polished Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Sax Waxed
+                    case 9: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Sax Waxed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Tiger Buffed
+                    case 10: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Tiger Buffed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Yeti Coated
+                    case 11: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Yeti Coated Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bank Rolled
+                    case 12: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bank Rolled Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bloom Buffed
+                    case 13: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bloom Buffed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bonk Varnished
+                    case 14: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bonk Varnished Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Cardboard Boxed
+                    case 15: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Cardboard Boxed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Clover Camo'd
+                    case 16: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Clover Camo'd Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dream Piped
+                    case 17: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Dream Piped Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Fire Glazed
+                    case 18: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Fire Glazed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Freeedom Wrapped
+                    case 19: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Freedom Wrapped Warpaint - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Kill Covered
+                    case 20: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Kill Covered Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+
+                    }
+                    //Merc Stained
+                    case 21: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Merc Stained - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pizza Polished
+                    case 22: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pizza Polished Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Quack Canvassed
+                    case 23: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Quack Canvassed - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Star Crossed
+                    case 24: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Star Crossed Brass Beast - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Carpet Bomber Mk. 2
+                    case 25: {/**/
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodland Warrior Mk. 2
+                    case 26: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodland Warrior Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Wrapped Reviver Mk. 2
+                    case 27: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Wrapped Reviver Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Forest Fire Mk. 2
+                    case 28: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Forest Fire Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Night Owl Mk. 2
+                    case 29: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Night Owl Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodsy Widowmaker Mk. 2
+                    case 30: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodsy Widowmaker Mk. 2 - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn Mk. 2
+                    case 31: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Autumn Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Plaid Potshotter Mk. 2
+                    case 32: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Plaid Potshotter Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civic Duty Mk. 2
+                    case 33: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Civic Duty Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civil Servant Mk. 2
+                    case 34: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dead Reckoner Mk. 2
+                    case 35: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Dead Reckoner Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bovine Blazemaker Mk. 2
+                    case 36: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Bovine Blazemaker Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick Mk. 2
+                    case 37: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Backwoods Boomstick Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Masked Mender Mk.
+                    case 38: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Masked Mender Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web Mk. 2
+                    case 39: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Macabre Web Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood Mk. 2
+                    case 40: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Iron Wood Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker Mk. 2
+                    case 41: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Nutcracker Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Smalltown Bringdown Mk. 2
+                    case 42: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Smalltown Bringdown Mk. 2 Brass Beast - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the warpaint");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            case "tomislav": {
+
+                int warpaintChooser = (int) (Math.random() * 42 + 1);
+                switch (warpaintChooser) {
+
+                    //Anodized Aloha
+                    case 1: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Anodized Aloha Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bamboo Brushed
+                    case 2: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bamboo Brushed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Croc Dusted
+                    case 3: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Croc Dusted Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Leopard Printed
+                    case 4: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Leopard Printed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macaw Masked
+                    case 5: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Macaw Masked Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mannana Peeled
+                    case 6: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Mannana Peeled Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Park Pigmented
+                    case 7: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Park Pigmented Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pina Polished
+                    case 8: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pina Polished Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Sax Waxed
+                    case 9: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Sax Waxed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Tiger Buffed
+                    case 10: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Tiger Buffed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Yeti Coated
+                    case 11: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Yeti Coated Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bank Rolled
+                    case 12: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bank Rolled Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bloom Buffed
+                    case 13: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bloom Buffed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bonk Varnished
+                    case 14: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bonk Varnished Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Cardboard Boxed
+                    case 15: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Cardboard Boxed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Clover Camo'd
+                    case 16: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Clover Camo'd Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dream Piped
+                    case 17: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Dream Piped Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Fire Glazed
+                    case 18: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Fire Glazed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Freeedom Wrapped
+                    case 19: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Freedom Wrapped Warpaint - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Kill Covered
+                    case 20: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Kill Covered Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+
+                    }
+                    //Merc Stained
+                    case 21: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Merc Stained - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pizza Polished
+                    case 22: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pizza Polished Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Quack Canvassed
+                    case 23: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Quack Canvassed - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Star Crossed
+                    case 24: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Star Crossed Tomislav - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Carpet Bomber Mk. 2
+                    case 25: {/**/
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodland Warrior Mk. 2
+                    case 26: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodland Warrior Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Wrapped Reviver Mk. 2
+                    case 27: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Wrapped Reviver Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Forest Fire Mk. 2
+                    case 28: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Forest Fire Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Night Owl Mk. 2
+                    case 29: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Night Owl Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodsy Widowmaker Mk. 2
+                    case 30: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodsy Widowmaker Mk. 2 - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn Mk. 2
+                    case 31: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Autumn Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Plaid Potshotter Mk. 2
+                    case 32: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Plaid Potshotter Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civic Duty Mk. 2
+                    case 33: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Civic Duty Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civil Servant Mk. 2
+                    case 34: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dead Reckoner Mk. 2
+                    case 35: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Dead Reckoner Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bovine Blazemaker Mk. 2
+                    case 36: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Bovine Blazemaker Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick Mk. 2
+                    case 37: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Backwoods Boomstick Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Masked Mender Mk.
+                    case 38: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Masked Mender Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web Mk. 2
+                    case 39: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Macabre Web Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood Mk. 2
+                    case 40: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Iron Wood Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker Mk. 2
+                    case 41: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Nutcracker Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Smalltown Bringdown Mk. 2
+                    case 42: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Smalltown Bringdown Mk. 2 Tomislav - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the warpaint");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            case "shotgun": {
+
+                int warpaintChooser = (int) (Math.random() * 52 + 1);
+                switch (warpaintChooser) {
+
+                    //Civic Duty
+                    case 1: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Civic Duty Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Rustic Ruiner
+                    case 2: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Rustic Ruiner Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick
+                    case 3: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Backwoods Boomstick Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Lightning Rod
+                    case 4: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Lightning Rod Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn
+                    case 5: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Autumn Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Coffin Nail
+                    case 6: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Coffin Nail Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dressed to Kill
+                    case 7: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        weapon = warpaintFestive + "Dressed to Kill Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Flower Power
+                    case 8: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Flower Power Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Red Bear
+                    case 9: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintFestiveMethod();
+                        warpaintUnusualMethod();
+                        weapon = warpaintFestive + "Red Bear Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Anodized Aloha
+                    case 10: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Anodized Aloha Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bamboo Brushed
+                    case 11: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bamboo Brushed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Croc Dusted
+                    case 12: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Croc Dusted Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Leopard Printed
+                    case 13: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Leopard Printed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macaw Masked
+                    case 14: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Macaw Masked Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mannana Peeled
+                    case 15: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Mannana Peeled Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Park Pigmented
+                    case 16: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Park Pigmented Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pina Polished
+                    case 17: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pina Polished Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Sax Waxed
+                    case 18: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Sax Waxed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Tiger Buffed
+                    case 19: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Tiger Buffed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Yeti Coated
+                    case 20: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Yeti Coated Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bank Rolled
+                    case 21: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bank Rolled Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bloom Buffed
+                    case 22: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bloom Buffed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bonk Varnished
+                    case 23: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bonk Varnished Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Cardboard Boxed
+                    case 24: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Cardboard Boxed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Clover Camo'd
+                    case 25: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Clover Camo'd Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dream Piped
+                    case 26: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Dream Piped Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Fire Glazed
+                    case 27: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Fire Glazed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Freeedom Wrapped
+                    case 28: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Freedom Wrapped Warpaint - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Kill Covered
+                    case 29: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Kill Covered Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Merc Stained
+                    case 30: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Merc Stained - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pizza Polished
+                    case 31: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pizza Polished Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Quack Canvassed
+                    case 32: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Quack Canvassed - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Star Crossed
+                    case 33: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Star Crossed Shotgun - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Carpet Bomber Mk. 2
+                    case 34: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodland Warrior Mk. 2
+                    case 35: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodland Warrior Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Wrapped Reviver Mk. 2
+                    case 36: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Wrapped Reviver Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Forest Fire Mk. 2
+                    case 37: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Forest Fire Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Night Owl Mk. 2
+                    case 38: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Night Owl Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodsy Widowmaker Mk. 2
+                    case 39: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodsy Widowmaker Mk. 2 - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn Mk. 2
+                    case 40: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Autumn Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Plaid Potshotter Mk. 2
+                    case 41: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Plaid Potshotter Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civic Duty Mk. 2
+                    case 42: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Civic Duty Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civil Servant Mk. 2
+                    case 43: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dead Reckoner Mk. 2
+                    case 44: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Dead Reckoner Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bovine Blazemaker Mk. 2
+                    case 45: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Bovine Blazemaker Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick Mk. 2
+                    case 46: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Backwoods Boomstick Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Masked Mender Mk.
+                    case 47: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Masked Mender Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web Mk. 2
+                    case 48: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Macabre Web Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood Mk. 2
+                    case 49: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Iron Wood Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker Mk. 2
+                    case 50: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Nutcracker Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Smalltown Bringdown Mk. 2
+                    case 51: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Smalltown Bringdown Mk. 2 Shotgun - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dragon Slayer
+                    case 52: {
+
+                        killstreakMethod();
+                        weapon = "Dragon Slayer Shotgun - Factory New - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the warpaint");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            case "family business": {
+
+                int warpaintChooser = (int) (Math.random() * 42 + 1);
+                switch (warpaintChooser) {
+
+                    //Anodized Aloha
+                    case 1: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Anodized Aloha Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bamboo Brushed
+                    case 2: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bamboo Brushed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Croc Dusted
+                    case 3: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Croc Dusted Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Leopard Printed
+                    case 4: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Leopard Printed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macaw Masked
+                    case 5: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Macaw Masked Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mannana Peeled
+                    case 6: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Mannana Peeled Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Park Pigmented
+                    case 7: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Park Pigmented Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pina Polished
+                    case 8: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pina Polished Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Sax Waxed
+                    case 9: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Sax Waxed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Tiger Buffed
+                    case 10: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Tiger Buffed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Yeti Coated
+                    case 11: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Yeti Coated Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bank Rolled
+                    case 12: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bank Rolled Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bloom Buffed
+                    case 13: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bloom Buffed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bonk Varnished
+                    case 14: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bonk Varnished Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Cardboard Boxed
+                    case 15: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Cardboard Boxed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Clover Camo'd
+                    case 16: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Clover Camo'd Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dream Piped
+                    case 17: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Dream Piped Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Fire Glazed
+                    case 18: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Fire Glazed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Freeedom Wrapped
+                    case 19: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Freedom Wrapped Warpaint - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Kill Covered
+                    case 20: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Kill Covered Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+
+                    }
+                    //Merc Stained
+                    case 21: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Merc Stained - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pizza Polished
+                    case 22: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pizza Polished Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Quack Canvassed
+                    case 23: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Quack Canvassed - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Star Crossed
+                    case 24: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Star Crossed Family Business - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Carpet Bomber Mk. 2
+                    case 25: {/**/
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodland Warrior Mk. 2
+                    case 26: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodland Warrior Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Wrapped Reviver Mk. 2
+                    case 27: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Wrapped Reviver Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Forest Fire Mk. 2
+                    case 28: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Forest Fire Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Night Owl Mk. 2
+                    case 29: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Night Owl Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodsy Widowmaker Mk. 2
+                    case 30: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodsy Widowmaker Mk. 2 - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn Mk. 2
+                    case 31: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Autumn Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Plaid Potshotter Mk. 2
+                    case 32: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Plaid Potshotter Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civic Duty Mk. 2
+                    case 33: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Civic Duty Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civil Servant Mk. 2
+                    case 34: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dead Reckoner Mk. 2
+                    case 35: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Dead Reckoner Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bovine Blazemaker Mk. 2
+                    case 36: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Bovine Blazemaker Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick Mk. 2
+                    case 37: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Backwoods Boomstick Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Masked Mender Mk.
+                    case 38: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Masked Mender Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web Mk. 2
+                    case 39: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Macabre Web Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood Mk. 2
+                    case 40: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Iron Wood Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker Mk. 2
+                    case 41: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Nutcracker Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Smalltown Bringdown Mk. 2
+                    case 42: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Smalltown Bringdown Mk. 2 Family Business - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the warpaint");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            case "panic attack": {
+
+                int warpaintChooser = (int) (Math.random() * 42 + 1);
+                switch (warpaintChooser) {
+
+                    //Anodized Aloha
+                    case 1: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Anodized Aloha Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bamboo Brushed
+                    case 2: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bamboo Brushed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Croc Dusted
+                    case 3: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Croc Dusted Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Leopard Printed
+                    case 4: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Leopard Printed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macaw Masked
+                    case 5: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Macaw Masked Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Mannana Peeled
+                    case 6: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Mannana Peeled Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Park Pigmented
+                    case 7: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Park Pigmented Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pina Polished
+                    case 8: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pina Polished Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Sax Waxed
+                    case 9: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Sax Waxed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Tiger Buffed
+                    case 10: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Tiger Buffed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Yeti Coated
+                    case 11: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Yeti Coated Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bank Rolled
+                    case 12: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bank Rolled Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bloom Buffed
+                    case 13: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bloom Buffed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bonk Varnished
+                    case 14: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Bonk Varnished Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Cardboard Boxed
+                    case 15: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Cardboard Boxed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Clover Camo'd
+                    case 16: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Clover Camo'd Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dream Piped
+                    case 17: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Dream Piped Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Fire Glazed
+                    case 18: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Fire Glazed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Freeedom Wrapped
+                    case 19: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Freedom Wrapped Warpaint - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Kill Covered
+                    case 20: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Kill Covered Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+
+                    }
+                    //Merc Stained
+                    case 21: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Merc Stained - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Pizza Polished
+                    case 22: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Pizza Polished Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Quack Canvassed
+                    case 23: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Quack Canvassed - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Star Crossed
+                    case 24: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        warpaintUnusualMethod();
+                        weapon = "Star Crossed Panic Attack - " + warpaintWear + " - " + warpaintUnusual + " - " + killstreak;
+                        break;
+
+                    }
+                    //Carpet Bomber Mk. 2
+                    case 25: {/**/
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodland Warrior Mk. 2
+                    case 26: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodland Warrior Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Wrapped Reviver Mk. 2
+                    case 27: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Wrapped Reviver Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Forest Fire Mk. 2
+                    case 28: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Forest Fire Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Night Owl Mk. 2
+                    case 29: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Night Owl Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Woodsy Widowmaker Mk. 2
+                    case 30: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Woodsy Widowmaker Mk. 2 - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Autumn Mk. 2
+                    case 31: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Autumn Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Plaid Potshotter Mk. 2
+                    case 32: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Plaid Potshotter Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civic Duty Mk. 2
+                    case 33: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Civic Duty Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Civil Servant Mk. 2
+                    case 34: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Carpet Bomber Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Dead Reckoner Mk. 2
+                    case 35: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Dead Reckoner Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Bovine Blazemaker Mk. 2
+                    case 36: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Bovine Blazemaker Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Backwoods Boomstick Mk. 2
+                    case 37: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Backwoods Boomstick Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Masked Mender Mk.
+                    case 38: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Masked Mender Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Macabre Web Mk. 2
+                    case 39: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Macabre Web Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Iron Wood Mk. 2
+                    case 40: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Iron Wood Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Nutcracker Mk. 2
+                    case 41: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Nutcracker Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    //Smalltown Bringdown Mk. 2
+                    case 42: {
+
+                        warpaintWearMethod();
+                        killstreakMethod();
+                        weapon = "Smalltown Bringdown Mk. 2 Panic Attack - " + warpaintWear + " - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the warpaint");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            default: {
+
+                System.out.println("Something went wrong with calling the warpaint method");
+                break;
+
+            }
+
+        }
+
+    }
+    private void weaponMethod() {
+
+        int loadoutSlot = (int) (Math.random() * 3 + 1);
+        switch (loadoutSlot) {
+
+            //Primary
+            case 1: {
+
+                int weaponChooser = (int) (Math.random() * 5 + 1);
+                switch (weaponChooser) {
+
+                    //Minigun
+                    case 1:{
+
+                        int versionChooser = (int) (Math.random() * 1 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Minigun - " + killstreak;
+                                break;
+
+                            }
+                            //Australium
+                            case 2: {
+
+                                killstreakMethod();
+                                weapon = "Australium Minigun - " + killstreak;
+                                break;
+
+                            }
+                            //Festive
+                            case 3: {
+
+                                killstreakMethod();
+                                weapon = "Festive Minigun - " + killstreak;
+                                break;
+
+                            }
+                            //Botkiller
+                            case 4: {
+
+                                botkillerMethod();
+                                break;
+
+                            }
+                            //War Painted
+                            case 5: {
+
+                                warpaintMethod("minigun");
+                                break;
+
+                            }
+                            //Iron Curtain
+                            case 6: {
+
+                                killstreakMethod();
+                                weapon = "Iron Curtain - " + killstreak;
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the miniguns weapon version");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Natascha
+                    case 2: {
+
+                        int versionChooser = (int) (Math.random() * 2 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Natascha - " + killstreak;
+                                break;
+
+                            }
+                            //Festive
+                            case 2: {
+
+                                killstreakMethod();
+                                weapon = "Festive Natascha - " + killstreak;
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went awrong with choosing the version of natascha");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Brass Beast
+                    case 3: {
+
+                        int versionChooser = (int) (Math.random() * 2 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Brass Beast - " + killstreak;
+                                break;
+
+                            }
+                            //War Paint
+                            case 2: {
+
+                                warpaintMethod("brass beast");
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version off the brass beast");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Tomislav
+                    case 4: {
+
+                        int versionChooser = (int) (Math.random() * 3 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Tomislav - " + killstreak;
+                                break;
+
+                            }
+                            //Australium
+                            case 2: {
+
+                                killstreakMethod();
+                                weapon = "Australium Tomislav - " + killstreak;
+                                break;
+
+                            }
+                            //War Paint
+                            case 3: {
+
+                                warpaintMethod("tomislav");
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version for the tomislav");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Huo Long Heater
+                    case 5: {
+
+                        killstreakMethod();
+                        weapon = "Huo-Long Heater - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the primary weapon");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            //Secondary
+            case 2: {
+
+                int weaponChooser = (int) (Math.random() * 7 + 1);
+                switch (weaponChooser) {
+
+                    //Shotgun
+                    case 1: {
+
+                        int versionChooser = (int) (Math.random() * 3 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Shotgun - " + killstreak;
+                                break;
+
+                            }
+                            //Festive Shotgun
+                            case 2: {
+
+                                killstreakMethod();
+                                weapon = "Festive Shotgun - " + killstreak;
+                                break;
+
+                            }
+                            //War Paint
+                            case 3: {
+
+                                warpaintMethod("shotgun");
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong wtih choosing the versino of the shotgun");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Sandvich
+                    case 2: {
+
+                        int versionChooser = (int) (Math.random() * 3 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                weapon = "Sandvich";
+                                break;
+
+                            }
+                            //Festive
+                            case 2: {
+
+                                weapon = "Festive Sandvich";
+                                break;
+
+                            }
+                            //Robo-Sandvich
+                            case 3: {
+
+                                weapon = "Robo-Sandvich";
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version of the sandvich");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Dalokohs Bar
+                    case 3: {
+
+                        int versionChooser = (int) (Math.random() * 2 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                weapon = "Dalokohs Bar";
+                                break;
+
+                            }
+                            //Fishcake
+                            case 2: {
+
+                                weapon = "Fishcake";
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version of the dalakohs bar");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Buffalo Steak Sandvich
+                    case 4: {
+
+                        weapon = "Buffalo Steak Sandvich";
+                        break;
+
+                    }
+                    //Family Business
+                    case 5: {
+
+                        int versionChooser = (int) (Math.random() * 5 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Family Business - " + killstreak;
+                                break;
+
+                            }
+                            //War Paint
+                            case 2: {
+
+                                warpaintMethod("family business");
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version of family business");
+                                break;
+
+                            }
+
+                        }
+
+                    }
+                    //Panic Attack
+                    case 6: {
+
+                        int versionChooser = (int) (Math.random() * 2 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Panic Attack - " + killstreak;
+                                break;
+
+                            }
+                            //War Paint
+                            case 2: {
+
+                                warpaintMethod("panic attack");
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version of the panic attack");
+                                break;
+
+                            }
+
+                        }
+
+                    }
+                    //Second Bannana
+                    case 7: {
+
+                        weapon = "Second Bannana";
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the secondary weapon");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            //Melee
+            case 3: {
+
+                int weaponChooser = (int) (Math.random() * 7 + 1);
+                switch (weaponChooser) {
+
+                    //Fists
+                    case 1: {
+
+                        int versionChooser = (int) (Math.random() * 11 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Fists - " + killstreak;
+                                break;
+
+                            }
+                            //Apoco-Fists
+                            case 2: {
+
+                                killstreakMethod();
+                                weapon = "Apoco-Fists - " + killstreak;
+                                break;
+
+                            }
+                            //Frying Pan
+                            case 3: {
+
+                                killstreakMethod();
+                                weapon = "Frying Pan - " + killstreak;
+                                break;
+
+                            }
+                            //Conscientious Objector
+                            case 4: {
+
+                                killstreakMethod();
+                                weapon = "Concientious Objector - " + killstreak;
+                                break;
+
+                            }
+                            //Freedom Staff
+                            case 5: {
+
+                                killstreakMethod();
+                                weapon = "Freedom Staff - " + killstreak;
+                                break;
+
+                            }
+                            //Bat Outta Hell
+                            case 6: {
+
+                                killstreakMethod();
+                                weapon = "Bat Outta Hell - " + killstreak;
+                                break;
+
+                            }
+                            //Ham Shank
+                            case 7: {
+
+                                killstreakMethod();
+                                weapon = "Ham Shank - " + killstreak;
+                                break;
+
+                            }
+                            //Necro Smasher
+                            case 8: {
+
+                                killstreakMethod();
+                                weapon = "Necro Smasher - " + killstreak;
+                                break;
+
+                            }
+                            //Crossing Guard
+                            case 9: {
+
+                               killstreakMethod();
+                               weapon = "Crossing Gaurd - " + killstreak;
+                               break;
+
+                            }
+                            //Prinny Machete
+                            case 10: {
+
+                                killstreakMethod();
+                                weapon = "Prinny Machete - " + killstreak;
+                                break;
+
+                            }
+                            //Golden Frying Pan
+                            case 11: {
+
+                                String killstreakSheen = "Something went wrong with choosing the killstreak sheen";
+                                int killstreakSheenChooser = (int) (Math.random() * 7 + 1);
+                                switch (killstreakSheenChooser) {
+
+
+                                    //Team Shine
+                                    case 1: {
+
+                                        killstreakSheen = "Team Shine";
+                                        break;
+
+                                    }
+                                    //Hot Rod
+                                    case 2: {
+
+                                        killstreakSheen = "Hot Rod";
+                                        break;
+
+                                    }
+                                    //Manndarin
+                                    case 3: {
+
+                                        killstreakSheen = "Manndarin";
+                                        break;
+
+                                    }
+                                    //Deadly Daffodil
+                                    case 4: {
+
+                                        killstreakSheen = "Deadly Daffodil";
+                                        break;
+
+                                    }
+                                    //Mean Green
+                                    case 5: {
+
+                                        killstreakSheen = "Mean Green";
+                                        break;
+
+                                    }
+                                    //Agonizing Emerald
+                                    case 6: {
+
+                                        killstreakSheen = "Agonizing Emerald";
+                                        break;
+
+                                    }
+                                    //Villainous Violet
+                                    case 7: {
+
+                                        killstreakSheen = "Villainous Violet";
+                                        break;
+
+                                    }
+                                    default: {
+
+                                        System.out.println("Something went wrong with the switch statement for the killstreak sheens");
+                                        break;
+
+                                    }
+
+
+                                }
+                                int killNumber = (int) (Math.random() * 20 + 5);
+                                String killstreakEffect = "Something went wrong with choosing the killstreak effect";
+                                int killstreakEffectChooser = (int) (Math.random() * 7 + 1);
+                                switch (killstreakEffectChooser) {
+
+                                    //Cerebral Discharge
+                                    case 1: {
+
+                                        killstreakEffect = "Cerebral Discharge";
+                                        break;
+
+                                    }
+                                    //Fire Horns
+                                    case 2: {
+
+                                        killstreakEffect = "Fire Horns";
+                                        break;
+
+                                    }
+                                    //Flames
+                                    case 3: {
+
+                                        killstreakEffect = "Flames";
+                                        break;
+
+                                    }
+                                    //Hypno-Beam
+                                    case 4: {
+
+                                        killstreakEffect = "Hypno-Beam";
+                                        break;
+
+                                    }
+                                    //Incinerator
+                                    case 5: {
+
+                                        killstreakEffect = "Incinerator";
+                                        break;
+
+                                    }
+                                    //Singularity
+                                    case 6: {
+
+                                        killstreakEffect = "Singularity";
+                                        break;
+
+                                    }
+                                    //Tornado
+                                    case 7: {
+
+                                        killstreakEffect = "Tornado";
+                                        break;
+
+                                    }
+                                    default: {
+
+                                        System.out.println("Something went wrong with the switch statement for the killstreak effects");
+                                        break;
+
+                                    }
+
+                                }
+                                killstreak = "professional killstreak - " + killstreakSheen + " - " + killstreakEffect + " - " + killNumber + " kills";
+                                weapon = "Golden Frying Pan - " + killstreak;
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version of the fists");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Killing Gloves of Boxing
+                    case 2: {
+
+                        killstreakMethod();
+                        weapon = "Killing Glvoes of Boxing - " + killstreak;
+                        break;
+
+                    }
+                    //Gloves of Running Urgently
+                    case 3: {
+
+                        int versionChooser = (int) (Math.random() * 3 + 1);
+                        switch (versionChooser) {
+
+                            //Standard
+                            case 1: {
+
+                                killstreakMethod();
+                                weapon = "Gloves of Running Urgently - " + killstreak;
+                                break;
+
+                            }
+                            //Festive
+                            case 2: {
+
+                                killstreakMethod();
+                                weapon = "Festing Killing Gloves of Boxing - " + killstreak;
+                                break;
+
+                            }
+                            //Bread Bite
+                            case 3: {
+
+                                killstreakMethod();
+                                weapon = "Bread Bite - " + killstreak;
+                                break;
+
+                            }
+                            default: {
+
+                                System.out.println("Something went wrong with choosing the version of the gloves of running urgently");
+                                break;
+
+                            }
+
+                        }
+                        break;
+
+                    }
+                    //Warriors Spirit
+                    case 4: {
+
+                        killstreakMethod();
+                        weapon = "Warrior's Spirit - " + killstreak;
+                        break;
+
+                    }
+                    //Fists of Steel
+                    case 5: {
+
+                        killstreakMethod();
+                        weapon = "Fists of Steel - " + killstreak;
+                        break;
+
+                    }
+                    //Eviction Notice
+                    case 6: {
+
+                        killstreakMethod();
+                        weapon = "Eviction Notice - " + killstreak;
+                        break;
+
+                    }
+                    //Holiday Punch
+                    case 7: {
+
+                        killstreakMethod();
+                        weapon = "Holiday Punch - " + killstreak;
+                        break;
+
+                    }
+                    default: {
+
+                        System.out.println("Something went wrong with choosing the melee weapon");
+                        break;
+
+                    }
+
+                }
+                break;
+
+            }
+            default: {
+
+                System.out.println("Something went wrong with choosinig the loadout slot");
+                break;
 
             }
 
